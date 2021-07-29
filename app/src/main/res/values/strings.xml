@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Minesweeper</string>
+
+    <!-- Main Activity Heading -->
+    <string name="mainActivityHeading">Minesweeper</string>
+
+    <!-- Main Activity Times -->
+    <string name="mainActivityBestTime">Best Time: %s%s</string>
+    <string name="mainActivityLastGameTime">Last Game Time: %s%s</string>
+
+    <!-- Difficulty Heading and Radio Buttons in Main Activity -->
+    <string name="mainActivityDifficulty">Select Difficulty</string>
+    <string name="mainActivityEasyDifficulty">Easy</string>
+    <string name="mainActivityMediumDifficulty">Medium</string>
+    <string name="mainActivityDifficultDifficulty">Difficult</string>
+
+    <!-- For Or Option in Main Activity -->
+    <string name="mainActivityOr">Or</string>
+
+    <!-- For Making A Custom Board Button -->
+    <string name="mainActivityMakeACustomBoard">Make A Custom Board</string>
+
+    <!-- Text to Show for Times on Main Activity when No game has been Played -->
+    <string name="mainActivityBestTimeNotAvailable">Win At Least A Game to display Best Time</string>
+    <string name="mainActivityLastGameTimeNotAvailable">Play At Least A Game to display Last Game Time</string>
+
+
+    <!-- For giving User again choice to choose Difficulty wise rather than by specifying the Rows, Columns, Mines -->
+    <string name="mainActivityMakeACustomBoardRevert">Change to Choosing Difficulty Level</string>
+
+    <!-- Toasts Text for Make A Custom Board Button Click on Main Activity and vice versa -->
+    <string name="mainActivityMakeACustomBoardToast">Enabled Choosing Custom Board</string>
+    <string name="mainActivityMakeACustomBoardToastRevert">Enabled Choosing Difficulty Level</string>
+
+    <!-- For the Number of Rows, Columns, Mines Input in Main Activity -->
+    <string name="mainActivityNumberOfRows">Enter The Number Of Rows</string>
+    <string name="mainActivityNumberOfColumns">Enter The Number Of Columns</string>
+    <string name="mainActivityNumberOfMines">Enter The Number Of Mines</string>
+
+    <!-- For Making a Start Button In Main Activity -->
+    <string name="mainActivityStart">Start</string>
+
+
+    <!-- Text to show when User Enter Number of Columns Input Less than Required -->
+    <string name="mainActivityNumberOfColumnsAllowed">The Number Of Columns For Your Screen Can\'t be less than %d.</string>
+
+    <!-- Text To show In Text When User Adds Invalid Input in Main Activity Inputs -->
+    <string name="mainActivityNumberOfColumnsNotEmpty">Number of Columns Must Not Be Empty</string>
+    <string name="mainActivityNumberOfRowsNotEmpty">Number Of Rows Can\'t be Empty</string>
+    <string name="mainActivityNumberOfMinesNotEmpty">Number Of Mines Can\'t be Empty.</string>
+    <string name="mainActivityNumberOfMinesNotGreaterThanOneForthOfRowsMultipliedColumns">Number Of Mines Can\'t be Greater Than one fourth of Rows*Columns></string>
+    <string name="mainActivityNumberOfColumnsNotGoodUI">The Number Of Columns Given By You Is Too High For Your Screen Size</string>
+
+
+    <!-- Text of Restart Button in PlayGame -->
+    <string name="playGameActivityRestart">Restart</string>
+
+
+    <!-- Dummy Number Of Mines Minus Flags and Mines in Play Game Activity -->
+    <string name="playGameActivityDummyMinesMinusFlags">0</string>
+    <string name="playGameMines">Mines</string>
+
+
+    <!-- Display Time And Seconds -->
+    <string name="displayTimeSeconds">%s%s</string>
+
+    <!-- Choose Difficulty Level -->
+    <string name="chooseDifficulty">Please Choose Difficulty Level</string>
+    
+    <!-- Long Click to Flag It -->
+    <string name="longClickToFlag">Long Click To Flag A Site</string>
+    <string name="clickToExplore">Click To Explore A Site</string>
+
+
+    <!-- No Easy Level -->
+    <string name="cantSelectLevel">Can\'t select %s Level As Size Of Screen Is Too Small</string>
+    
+    <!-- Time And Time Left in play Game Activity -->
+    <string name="playGameTime">Time</string>
+    <string name="playGameTimeLeft">0</string>
+
+</resources>

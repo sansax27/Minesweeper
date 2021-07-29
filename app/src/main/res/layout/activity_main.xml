@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Heading"
+            style="@style/mainActivityHeadingStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mainActivityHeading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/bestGameTime"
+            style="@style/mainActivityTimes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mainActivityBestTime"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Heading" />
+
+        <TextView
+            android:id="@+id/lastGameTime"
+            style="@style/mainActivityTimes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mainActivityLastGameTime"
+            app:layout_constraintBottom_toTopOf="@id/selectDifficulty"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bestGameTime" />
+
+        <TextView
+            android:id="@+id/selectDifficulty"
+            style="@style/mainActivitySelectDifficulty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mainActivityDifficulty"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lastGameTime" />
+
+        <RadioGroup
+            android:id="@+id/difficultyRadioButtons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/selectDifficulty">
+
+            <RadioButton
+                android:id="@+id/easy"
+                style="@style/mainActivitySelectDifficultyRadioButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mainActivityEasyDifficulty" />
+
+            <RadioButton
+                android:id="@+id/medium"
+                style="@style/mainActivitySelectDifficultyRadioButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mainActivityMediumDifficulty" />
+
+            <RadioButton
+                android:id="@+id/difficult"
+                style="@style/mainActivitySelectDifficultyRadioButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mainActivityDifficultDifficulty" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/or"
+            style="@style/mainActivityOr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/mainActivityOr"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/difficultyRadioButtons" />
+
+        <Button
+            android:id="@+id/makeACustomBoard"
+            style="@style/mainActivityMakeACustomBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mainActivityMakeACustomBoard"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/or" />
+
+        <EditText
+            android:id="@+id/numberOfRows"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autofillHints="no"
+            android:enabled="false"
+            android:hint="@string/mainActivityNumberOfRows"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/makeACustomBoard" />
+
+
+        <EditText
+            android:id="@+id/numberOfColumns"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autofillHints="no"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/mainActivityNumberOfColumns"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/numberOfRows" />
+
+        <EditText
+            android:id="@+id/numberOfMines"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:autofillHints="no"
+            android:ems="10"
+            android:enabled="false"
+            android:hint="@string/mainActivityNumberOfMines"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/numberOfColumns" />
+
+        <Button
+            android:id="@+id/startGame"
+            style="@style/mainActivityMakeACustomBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/mainActivityStart"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/numberOfMines" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

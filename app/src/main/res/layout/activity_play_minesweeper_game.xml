@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/restart"
+            style="@style/mainActivityMakeACustomBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playGameActivityRestart"
+            app:layout_constraintBottom_toBottomOf="@id/numberOfMinesMinusFlags"
+            app:layout_constraintLeft_toRightOf="@id/mines"
+            app:layout_constraintRight_toLeftOf="@id/time"
+            app:layout_constraintTop_toTopOf="@id/mines" />
+
+        <TextView
+            android:id="@+id/mines"
+            style="@style/playGameMines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playGameMines"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/numberOfMinesMinusFlags"
+            style="@style/playGameMines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playGameActivityDummyMinesMinusFlags"
+            app:layout_constraintLeft_toLeftOf="@id/mines"
+            app:layout_constraintRight_toRightOf="@id/mines"
+            app:layout_constraintTop_toBottomOf="@id/mines" />
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/playGameMines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/playGameTime"
+            app:layout_constraintBottom_toBottomOf="@id/mines"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/mines" />
+
+        <TextView
+            android:id="@+id/timePassed"
+            style="@style/playGameMines"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/playGameTimeLeft"
+            android:textAlignment="center"
+            app:layout_constraintBaseline_toBaselineOf="@+id/numberOfMinesMinusFlags"
+            app:layout_constraintLeft_toLeftOf="@id/time"
+            app:layout_constraintRight_toRightOf="@id/time" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/minesweeperPlayBoard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/numberOfMinesMinusFlags">
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

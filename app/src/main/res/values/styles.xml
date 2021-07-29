@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Style of Main Activity Heading !-->
+    <style name="mainActivityHeadingStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style of Times shown in Main Activity -->
+    <style name="mainActivityTimes" parent="Widget.AppCompat.TextView">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <!-- Style of Select Difficulty in Main Activity -->
+    <style name="mainActivitySelectDifficulty" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!-- Style of Difficulty Radio Buttons in Main Activity -->
+    <style name="mainActivitySelectDifficultyRadioButtons" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <!-- Style of Or in Main Activity -->
+    <style name="mainActivityOr" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <!-- Style Make A Custom Board Button, Start Button in Main Activity AND Restart Button in PlayGames  -->
+    <style name="mainActivityMakeACustomBoard">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:backgroundTint">#C0C0C0</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!--  For the Number of Rows, Columns, Mines Input in Main Activity -->
+    <style name="mainActivityInputMinesweeperParams">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Mines and Number Of Mines Left AND Time and Time Left In Play Game Activity -->
+    <style name="playGameMines" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:padding">15dp</item>
+    </style>
+</resources>
